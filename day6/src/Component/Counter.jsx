@@ -9,7 +9,9 @@ constructor (props){
         this.setState({count: this.state.count+1})
     }
     counter2=()=>{
+        if(this.state.count > 0){
         this.setState({count: this.state.count-1})
+    }
     }
     countreset=()=>{
         this.setState({count: 0})
