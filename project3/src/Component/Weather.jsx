@@ -38,14 +38,7 @@ const Weather = () => {
   return (
     <div className="weather-card">
     <div className="search">
-      <input 
-        type="search" 
-        placeholder="Enter city name" 
-        value={city} 
-        onChange={handleChange} 
-        ref={inputRef} 
-        spellCheck="false"
-      />
+      <input type="search" placeholder="Enter city name" value={city} onChange={handleChange} ref={inputRef}/>
       <button onClick={getWeather}>
         <i className="bi bi-search"></i>
       </button>
