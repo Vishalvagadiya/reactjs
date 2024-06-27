@@ -1,0 +1,118 @@
+/* Styles for the SignupLogin component */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+#login-box {
+  background: white;
+  width: 400px;
+  padding: 40px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="submit"] {
+  display: block;
+  width: calc(100% - 40px);
+  margin: 10px auto;
+  padding: 15px;
+  border-radius: 30px;
+  border: 1px solid #ccc;
+  transition: all 0.3s;
+  font-size: 16px;
+  outline: none;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border-color: #6a11cb;
+  box-shadow: 0 0 10px rgba(106, 17, 203, 0.1);
+}
+
+input[type="submit"] {
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+input[type="submit"]:hover {
+  background: linear-gradient(to right, #2575fc, #6a11cb);
+}
+
+.password-container {
+  position: relative;
+}
+
+.input-error {
+  border: 1px solid red !important; 
+}
+
+
+.password-container i {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #ccc;
+  transition: color 0.3s;
+}
+
+.password-container i:hover {
+  color: #6a11cb;
+}
+
+span {
+  color: #6a11cb;
+  cursor: pointer;
+  display: block;
+  margin-top: 20px;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+span:hover {
+  color: #2575fc;
+}
+
+p {
+  color: red;
+  font-size: 0.9em;
+  margin-top: -10px;
+}
+
+.or {
+  height: 1px;
+  background: #ccc;
+  margin: 20px 0;
+  position: relative;
+}
+
+.or::before {
+  content: 'OR';
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  padding: 0 10px;
+  color: #aaa;
+}
