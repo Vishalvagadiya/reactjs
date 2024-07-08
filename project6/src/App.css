@@ -1,0 +1,135 @@
+body{
+  display: flex;
+  justify-content: center;
+}
+.main{
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.theme-container {
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  justify-content: space-evenly;
+}
+.content{
+  display: flex;
+}
+.theme-toggle, .language-dropdown {
+  margin: 20px 0;
+  position: relative;
+}
+
+.theme-button, .dropdown-button {
+  background-color: #3498db; /* Blue */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.theme-button:hover, .dropdown-button:hover {
+  background-color: #2980b9;
+  transform: translateY(-2px);
+}
+
+.dropdown-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  background-color: white;
+  border: 1px solid #ccc;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  z-index: 1;
+  margin-top: 10px;
+  border-radius: 8px;
+  animation: fadeIn 0.3s ease-in-out;
+  width: 200px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.dropdown-item {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border: none;
+  color: #333;
+  padding: 10px 20px;
+  text-align: left;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  width: -webkit-fill-available;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border-radius: 8px;
+  margin: 5px 0;
+}
+
+.dropdown-item input {
+  margin-right: 10px;
+}
+
+.dropdown-item:hover {
+  background-color: #f1f1f1;
+  color: #2980b9;
+}
+
+.language-display {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 20px;
+  color: #2c3e50;
+}
+
+.language-display {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 90%;
+  margin: 20px;
+  overflow: hidden;
+}
+.language-display:hover {
+  box-shadow: 0 4px 8px 6px rgba(0, 0, 0, 0.1);
+}
+.content {
+  padding: 20px;
+  text-align: start;
+  border: 1px solid white;
+  border-radius: 10px;
+  box-shadow: inset 0 0 10px 0 rgb(255 255 255 / 68%);
+  
+}
+.content img {
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 0 3px 0px white;
+}
+.content h3 {
+  margin-top: 20px;
+  color: #333;
+  margin-left: 50px;
+  line-height: 1.5;
+}
+.content b {
+  display: block;
+  margin-top: 10px;
+  color: #555;
+}
+
