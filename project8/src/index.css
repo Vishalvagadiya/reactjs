@@ -1,0 +1,476 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background: rgb(244, 244, 244);
+}
+.active{
+  color: black;
+}
+/* About.css */
+.about-container {
+  padding: 2rem;
+  max-width: 97%;
+  margin: 0 auto;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #ff6f61;
+  padding-bottom: 0.5rem;
+}
+
+.section-content {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 1.5rem;
+  text-align: justify;
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .section-content {
+    font-size: 1rem;
+  }
+}
+
+.home-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 20px 20px 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.hero-section {
+  flex: 2;
+  background: url('https://cellphones.com.vn/sforum/wp-content/uploads/2023/09/cach-nuong-pizza-8.jpg') no-repeat center center/cover;
+  color: white;
+  padding: 50px;
+  border-radius: 10px;
+  text-align: center;
+}
+.extra{
+  flex: 2;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background to enhance text readability */
+  color: white;
+  padding: 40px;
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+}
+
+.hero-title {
+  font-size: 4rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.hero-subtitle {
+  font-size: 2rem;
+  margin: 10px 0;
+}
+
+.hero-description {
+  font-size: 1.2rem;
+  margin: 20px 0;
+}
+
+.cta-button {
+  background-color: #f8c146;
+  color: #fff;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #e0a63a;
+}
+
+.side-section {
+  flex: 1;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  display: flex;
+}
+
+.side-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.side-description {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.side-button {
+  background-color: #2d8cf0;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.side-button:hover {
+  background-color: #1b6db1;
+}
+
+
+
+.product-preview {
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.product-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.product-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  width: 250px;
+  text-align: center;
+}
+
+.product-image {
+  width: 100%;
+  height: 200px;
+  border-radius: 5px;
+}
+
+.product-name {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.product-price {
+  font-size: 1rem;
+  color: #f8c146;
+  margin: 10px 0;
+}
+
+.product-description {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.product-card .cta-button {
+  background-color: #f8c146;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  font-size: 0.9rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.product-card .cta-button:hover {
+  background-color: #e0a63a;
+}
+
+.footer-container {
+  background-color: #333;
+  color: #fff;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.footer-logo {
+  flex: 1;
+}
+
+.footer-logo h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.footer-links {
+  flex: 2;
+}
+
+.footer-links h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.footer-links ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-contact {
+  flex: 2;
+}
+
+.footer-contact h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.footer-contact p {
+  margin: 5px 0;
+}
+
+.footer-contact a {
+  color: #f8c146;
+  text-decoration: none;
+}
+
+.footer-contact a:hover {
+  text-decoration: underline;
+}
+
+.footer-social {
+  flex: 1;
+}
+
+.footer-social h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icons a {
+  color: #fff;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #f8c146;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+
+/* LoginPage.css */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  background-image:url("https://media.istockphoto.com/id/1301856959/vector/pizza-cartoon-black-line-set-italian-icon-vector.jpg?s=2048x2048&w=is&k=20&c=AtDD42A_UiZy0cCSy4mpuMXAodr-x-Ots7W1Z8kHFFQ=");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.login-box {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.login-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.success-message {
+  color: #4caf50;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.error-message {
+  color: #f44336;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-input {
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.login-input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.login-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.login-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.02);
+}
+
+.login-button:active {
+  transform: scale(0.98);
+}
+
+/* SignupPage.css */
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  background-image: url("https://media.istockphoto.com/id/1078481744/vector/set-of-pizza-items-objects-and-symbols.jpg?s=2048x2048&w=is&k=20&c=5QXGmRYQ43R4YKD39o8BhDrx6QZC55WYS6L04WaDi4E=");
+  padding: 0 20px;
+}
+
+.signup-box {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.8);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  position: relative;
+}
+
+.signup-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.success-message {
+  color: #28a745;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.error-message {
+  color: #dc3545;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.signup-input {
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.signup-input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.signup-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.signup-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.03);
+}
+
+.signup-button:active {
+  transform: scale(0.98);
+}
